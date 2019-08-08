@@ -28,7 +28,8 @@ public:
 	Racional multFraccion(Racional fraccion);
 	Racional divFraccion(Racional fraccion);
 	Racional elevFraccion(Racional fraccion);
-	Racional elevEFraccion(Racional fraccion); 
+	bool elevEFraccion(Racional fraccion); 
+
 	int getNumerador() const;
 
 	void setNumerador(int numerador);

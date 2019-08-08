@@ -87,17 +87,14 @@ Racional Racional::elevFraccion(Racional fraccion) {
 	return resultado;
 }
 
-Racional Racional::elevEFraccion(Racional fraccion) {
-	Racional resultado;
+bool Racional::elevEFraccion(Racional fraccion) {
 	if(getNumerador()*fraccion.getDenominador() != getDenominador()*fraccion.getNumerador())
 	{
-		resultado.setDenominador(1);
-		return resultado;
+		return 1;
 	}
 	else
 	{
-		resultado.setDenominador(0);
-		return resultado;
+		return 0;
 	}
 }
 int Racional::getNumerador() const {

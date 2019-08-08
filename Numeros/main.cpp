@@ -45,17 +45,16 @@ int main()
 	std::cout << "RESULTADO: " << fraccionA.obtenerString() << " & " << fraccionA.obtenerString() <<
 		" = " << fraccionAux.obtenerString() << std::endl;
 
-	/*std::cout << "\nELEVAR EQUIVALENTE" << std::endl;   //No logre terminar el metodo
-	fraccionAux = fraccionA.elevEFraccion(fraccionB);
+	std::cout << "\nELEVAR EQUIVALENTE" << std::endl;
 	std::cout << "RESULTADO: " << fraccionA.obtenerString() << " =? " << fraccionB.obtenerString() << std::endl;
-		if (fraccionAux.setDenominador == 1) {
-			std::cout << "\nNo son equivalentes" << std::endl;
-		}
-		else
+	if (fraccionA.elevEFraccion(fraccionB) == 1) {
+		std::cout << "\nNo son equivalentes" << std::endl;
+	}
+	else
 
-		{
-			std::cout << "\nEn efecto son equivalentes" << std::endl;
-		}*/
+	{
+		std::cout << "\nEn efecto son equivalentes" << std::endl;
+	}
 
 	system("pause");
 	 
